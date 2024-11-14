@@ -1,22 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --WHITE: hsl(0, 0%, 100%);
+    --SLATE300: hsl(212, 45%, 89%);
+    --SLATE500: hsl(216, 15%, 48%);
+    --SLATE900: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--SLATE300);
+}
+
 main {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    font-family: "Outfit", sans-serif;
+    /* align-content: center; */
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 img {
     display: block;
+    border-radius: 8px;
+
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
 }
 
 .content {
-    max-width: 33vh;
+    max-width: 300px;
+    max-height: fit-content;
+
+    background-color: var(--WHITE);
+
     display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: -5px 10px 20px rgb(84, 84, 84);
+
+    padding: 1.5rem;
 }
+
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--SLATE900);
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: var(--SLATE500);
+    text-align: center;
+}
+
+
+
+
 
